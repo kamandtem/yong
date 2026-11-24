@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#856BA9" />
+    <meta name="description" content="سامانه جامع خودشناسی، رشد فردی و تحول زندگی مبتنی بر روان‌شناسی تحلیلی و علوم شناختی" />
+    <title>خودآگاه | سامانه جامع خودشناسی و تحول زندگی</title>
+    <link rel="manifest" href="/manifest.json" />
+    <!-- Vazirmatn Font CDN for smooth Persian typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+      /* Fallback system Persian fonts */
+      @font-face {
+        font-family: 'Vazirmatn';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Vazirmatn'), local('Vazir'), local('IRANSans'), local('Segoe UI'), system-ui;
+      }
+      body {
+        font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #F8FAFC;
+        color: #1E293B;
+        overflow-x: hidden;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(241, 245, 249, 0.7);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(133, 107, 169, 0.25);
+        border-radius: 9999px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(133, 107, 169, 0.45);
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-slate-50 via-[#F3F6FA] to-[#F5EFF9] min-h-screen text-slate-800 antialiased selection:bg-brand-purple/20 selection:text-brand-purple-dark">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>

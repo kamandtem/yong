@@ -1,0 +1,18 @@
+{
+  "short_name": "خودآگاه",
+  "name": "خودآگاه | سامانه جامع خودشناسی و تحول زندگی",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#F8FAFC",
+  "theme_color": "#856BA9",
+  "display": "standalone",
+  "orientation": "portrait",
+  "dir": "rtl",
+  "lang": "fa"
+}
